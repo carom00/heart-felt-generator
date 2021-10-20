@@ -9,6 +9,7 @@ If you want to install it without the script, make sure to install all the pytho
 download the prefered models for the generator, install exempi (sudo apt install exempi), create a folder called
 steps (mkdir steps) and clone CLIP (https://github.com/openai/CLIP) Taming Transformers (https://github.com/CompVis/taming-transformers)
 in the same folder with the scripts.
+Finally you rename .env.default to .env and add the needed values
 
 ## How To Run
 Edit the start.txt with the text you want and file name to be saved and run python start.py (based on the python installation
