@@ -114,8 +114,12 @@ def execute(text, fileName):
         cut_pow=1.,
         display_freq=intervalo_imagenes,
         seed=seed,
-    )                                        
-    device = torch.device('cpu')
+    )
+    useOnlyCPU = bool(os.getenv('USE_CPU_ONLY'))
+    if (useOnlyCPU):
+        device = torch.device('cpu')
+    else:
+        device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     print('Using device:', device)
     if textos:
         print('Using texts:', textos)
