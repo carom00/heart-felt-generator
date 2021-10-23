@@ -2,8 +2,8 @@
 Generate an image and poem using VQGAN-CLIP, GPT-3 and deep style transfer.
 
 ### TODO:
-Read prompts from txt file
-Summarize input before generating CLIP to distill
+- Read prompts from txt file
+- Summarize input before generating CLIP to distill
 
 ## How To Install
 Install the requirements - pip install -r requirements.txt
